@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ultimate Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="setup-container" id="setup">
+      <h2>Game Setup</h2>
+      <div>
+        <label>Grid Size: </label>
+        <input type="number" id="gridSize" value="3" min="3" max="6" />
+      </div>
+      <div>
+        <label>Number of Players: </label>
+        <input type="number" id="playerCount" value="2" min="2" max="6" />
+      </div>
+      <button onclick="showPlayerSetup()">Next</button>
+      <div id="playerSetup"></div>
+    </div>
+
+    <div class="game-container" id="gameContainer">
+      <h1>Ultimate Tic-Tac-Toe</h1>
+      <div id="playerDisplay"></div>
+      <div class="big-grid" id="bigGrid"></div>
+      <button onclick="resetGame()">Reset Game</button>
+      <button onclick="showSetup()">New Game Setup</button>
+    </div>
+  </body>
+</html>
